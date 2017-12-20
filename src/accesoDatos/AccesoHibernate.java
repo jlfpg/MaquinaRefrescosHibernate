@@ -3,6 +3,7 @@ package accesoDatos;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map.Entry;
 
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -78,7 +79,7 @@ public class AccesoHibernate implements I_Acceso_Datos {
 		for (Integer key : depositos.keySet()) {
 			Deposito deposito = (Deposito) depositos.get(key);
 
-			session.update(deposito);
+			session.save(deposito);
 		}
 		return true;
 	}
@@ -90,7 +91,7 @@ public class AccesoHibernate implements I_Acceso_Datos {
 		for (String key : dispensadores.keySet()) {
 			Dispensador dispensador = (Dispensador) dispensadores.get(key);
 
-			session.update(dispensador);
+			session.save(dispensador);
 		}
 		return true;
 	}
