@@ -28,7 +28,7 @@ public class Deposito {
 	 * @param v - valor de la moneda en cuesti�n
 	 * @param inicial - cantidad de monedas de este tipo con las que se inicia la ejecuci�n de la m�quina de refrescos
 	 */
-	public Deposito(String n, int v, int inicial){
+	public Deposito( String n, int v, int inicial){
 		id = v;
 		nombreMoneda = n;
 		valor = v;
