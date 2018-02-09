@@ -112,7 +112,7 @@ public class AccesoJSON implements I_Acceso_Datos {
 
 			String url = SERVER_PATH + GET_DISPEN; // Sacadas de configuracion
 
-			System.out.println("La url a la que lanzamos la peticiï¿½n es " + url); //
+			//System.out.println("La url a la que lanzamos la peticiï¿½n es " + url); //
 			// Traza para pruebas
 
 			String response = encargadoPeticiones.getRequest(url);
